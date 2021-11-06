@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | Patrick Reis</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <meta name="theme-color" content="#000">
+
+</head>
+<body>
+   <main>
+    <h1>Password Generator</h1>
+    <small>Create your password in 1-2 steps</small>
+    <div class="password-settings">
+        <div class="password-options">
+            <h3>Password</h3>
+            <p>Lorem ipsum dolor sit.</p>
+            <div id="password"></div>
+        </div>
+        <div class="password-options">
+            <h3>Custom</h3>
+            <p>Custom password</p>
+            <div class="password-options-items">
+                <label class="container">
+                    Numbers
+                    <input id="numbers" checked="checked" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                <label class="container">
+                    UpperCase
+                    <input id="upper_case" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                <label class="container">
+                    LowerCase
+                    <input id="lower_case" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                <label class="container">
+                    Symbols
+                    <input id="symbols" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+        </div>
+    </div>
+    <button class="button" id="generator">
+        <img src="src/icons/key.svg" >
+        <span>Generate</span>
+    </button>
+    </main>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
